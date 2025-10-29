@@ -1,0 +1,38 @@
+from tkinter import *
+
+root = Tk()
+root.title("TAKSHASHILA UNIVERSITY")
+root.geometry("500x700")
+
+f1 = Frame(root, bg="red")
+f1.pack(fill="both", expand=0)
+
+l1 = Label(f1, text="ONGUR, TINDIVANAM, VILLUPURAM (DIST), TAMIL NADU",
+           bg="red", fg="yellow", font=("Arial", 12))
+l1.pack()
+
+f2 = Frame(root, bg="pink")
+f2.pack(fill="both", expand=0)
+
+l2 = Label(f2, text="STUDENT INFORMATION",
+           bg="pink", font=("Arial", 15))
+l2.pack()
+
+f3 = Frame(root, bg="light green")
+f3.pack(fill="both", expand=0)
+
+l3 = Label(f3,
+           text="ENROLLMENT NO:\nSTUDENT NAME:\nDATE OF BIRTH:\nADDRESS FOR COMMUNICATION:\nPHONE NO:",
+           bg="light green", fg="black", font=("Arial", 12))
+l3.pack()
+
+e = Entry(root, font=("Arial", 12))
+e.pack()
+
+b_save = Button(root, text="Save", font=("Arial", 12), bg="light blue")
+b_save.pack()
+
+b_cancel = Button(root, text="Cancel", font=("Arial", 12), bg="lightcoral")
+b_cancel.pack()
+
+root.mainloop()
